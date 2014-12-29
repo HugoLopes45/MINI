@@ -1,0 +1,205 @@
+/* Variables */
+/* Base */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Sass Clearfix */
+.l-container, .section-title {
+  *zoom: 1; }
+  .l-container:before, .section-title:before, .l-container:after, .section-title:after {
+    content: " ";
+    display: table; }
+  .l-container:after, .section-title:after {
+    clear: both; }
+
+/* My CSS */
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #737373; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px; }
+
+h1 {
+  color: #000;
+  font-weight: 600;
+  line-height: 45px;
+  font-size: 30px; }
+
+h2 {
+  color: #000;
+  line-height: 1.25;
+  font-size: 20px; }
+
+.cb {
+  clear: both; }
+
+/* Layout */
+.l-container {
+  max-width: 1170px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5; }
+
+/* Modules */
+.header {
+  padding: 80px 0 165px 0;
+  color: #fff;
+  text-align: center;
+  background: url(../img/header.jpg) center top fixed;
+  background-size: cover; }
+
+.header-logo {
+  display: block;
+  float: left; }
+
+/* MENU */
+.menu {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 65px;
+  float: right;
+  text-align: right; }
+
+.menu-item {
+  -webkit-transition: all 0.6s ease;
+          transition: all 0.6s ease; }
+  .menu-item:before {
+    content: "//";
+    padding: 0 37px;
+    display: inline-block;
+    color: #fff; }
+  .menu-item:first-child:before {
+    display: none; }
+  .menu-item:hover, .menu-item.menu-item-active {
+    color: #000; }
+
+/* HEADER-BASELINE */
+.header-baseline {
+  margin: 150px 0 80px 0;
+  font-weight: 300;
+  font-size: 45px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  text-align: center; }
+
+.header-baseline-l {
+  display: block;
+  line-height: 60px; }
+
+.header-baseline-l2 {
+  display: block;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 80px; }
+
+.header-baseline-l3 {
+  font-size: 40px;
+  line-height: 70px; }
+
+.btn {
+  display: inline-block;
+  padding: 0 40px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 40px;
+  background-color: #f39c12; }
+
+.section {
+  padding: 85px 0;
+  background-color: #fff;
+  position: relative; }
+  .section:before, .section:after {
+    content: '';
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-transform: skewY(-2deg);
+        -ms-transform: skewY(-2deg);
+            transform: skewY(-2deg);
+    z-index: 4; }
+  .section:after {
+    -webkit-transform-origin: top right;
+        -ms-transform-origin: top right;
+            transform-origin: top right; }
+
+.section-title h1 {
+  float: left;
+  width: 180px;
+  color: #000;
+  text-align: right;
+  padding: 0 20px 0 0;
+  text-transform: uppercase;
+  border-right: 4px solid #f39c12; }
+.section-title p {
+  width: 970px;
+  float: right;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  line-height: 25px; }
+
+

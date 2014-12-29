@@ -1,0 +1,15 @@
+/* Variables */
+$default-transition-duration: 0.6s;
+$primary-color: #f39c12;
+$color-red: #e74c3c;
+
+/* Base */
+@import "base/base";
+
+/* Layout */
+@import "layout/grid";
+
+/* Modules */
+@import "module/header";
+@import "module/buttons";
+@import "module/section";

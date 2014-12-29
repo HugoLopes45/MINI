@@ -1,0 +1,44 @@
+.section {
+	padding: 85px 0;
+	background-color: #fff;
+	position: relative;
+	&:before, &:after{
+		content: '';
+		display: block;
+		background-color: #fff;
+		position: absolute;
+		top: 0; left: 0; bottom: 0; right: 0;
+		transform-origin: top left;
+		transform: skewY(-2deg);
+		z-index: 4;
+	}
+	&:after{
+		transform-origin: top right;
+	}
+}
+
+.section-title{
+	@extend %clearfix;
+
+	h1{
+		float: left;
+		width: 180px;
+
+		color:#000;
+		text-align: right;
+		padding: 0 20px 0 0;
+		text-transform: uppercase;
+
+		border-right: 4px solid $primary-color;
+	}
+	p {
+		width: 970px;
+
+		float: right;
+		margin: 0;
+		padding: 0;
+		
+		text-transform: uppercase;
+		line-height: 25px;
+	}
+}
