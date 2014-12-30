@@ -1,3 +1,6 @@
+/* Compass */
+@import "compass";
+
 /* Variables */
 $default-transition-duration: 0.6s;
 $primary-color: #f39c12;
@@ -11,5 +14,6 @@ $color-red: #e74c3c;
 
 /* Modules */
 @import "module/header";
-@import "module/buttons";
+@import "module/button";
 @import "module/section";
+@import "module/icon";
