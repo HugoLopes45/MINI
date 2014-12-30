@@ -19,7 +19,7 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
     notify = require('gulp-notify'),
-    cache = require('gulp-cache'),
+    //cache = require('gulp-cache'),
     livereload = require('gulp-livereload'),
     del = require('del');
 
@@ -61,14 +61,14 @@ gulp.task('styles', function() {
 //Images
 gulp.task('images', function() {
   return gulp.src('src/images/**/*')
-    .pipe(cache(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
+    .pipe(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true }))
     .pipe(gulp.dest('assets/img'))
     .pipe(notify({ message: 'Images task complete' }));
 });
 
 // Clean
-gulp.task('clean', function(cb) {
-    del(['assets/styles', 'assets/img', 'assets/js'], cb)
+gulp.task('clean', function(cb, err, deletedFiles) {
+    del(['assets/styles', 'assets/img', 'assets/js'], cb);
 });
 
 // Watch
