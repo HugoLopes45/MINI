@@ -1,0 +1,53 @@
+.about {
+    @include clearfix;
+}
+
+.about-icon {
+    width: 125px;
+    height: 125px;
+    float: left;
+    margin-right: 30px;
+
+    text-align: center;
+    line-height: 125px;
+
+    border: 2px solid $primary-color;
+    border-radius: 125px;
+}
+
+.about-text {
+    width: 505px;
+    float: left;
+}
+
+.about-text-subtitle {
+    color: $color-red;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.about-photo {
+    float: right;
+}
+
+.about-skills {
+    .about-photo {
+        width: 610px;
+        float: left;
+    }
+    .about-photo img {
+        margin-left: 25px;
+    }
+    .about-container {
+        width: 550px;
+        float: right;
+    }
+    .about-text {
+        width: 395px;
+        float: right;
+        margin-bottom: 10px;
+    }
+    .about-icon {
+        float: left;
+    }
+}

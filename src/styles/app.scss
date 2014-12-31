@@ -13,7 +13,10 @@ $color-red: #e74c3c;
 @import "layout/grid";
 
 /* Modules */
-@import "module/header";
-@import "module/button";
-@import "module/section";
 @import "module/icon";
+@import "module/button";
+@import "module/progress";
+
+@import "module/header";
+@import "module/section";
+@import "module/about";
